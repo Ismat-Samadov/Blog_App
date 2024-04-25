@@ -340,3 +340,115 @@ ActionView::Template::Error (undefined local variable or method `blog' for #<Act
   
 app/views/blogs/_form.html.erb:1
 app/views/blogs/new.html.erb:2
+Started GET "/" for 127.0.0.1 at 2024-04-25 18:36:30 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:2
+  Rendered blogs/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1364)
+  Rendered layout layouts/application.html.erb (Duration: 153.8ms | Allocations: 21597)
+Completed 200 OK in 255ms (Views: 167.9ms | ActiveRecord: 5.6ms | Allocations: 32506)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-25 18:37:25 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 9.7ms | Allocations: 1779)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 2051)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 2136)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.8ms | Allocations: 17943)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<ActionView::Base:0x0000000000b9f0>):
+    1: <%= form_with(model: blog, local: true) do |form| %>
+    2:   <% if blog.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+  
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:2
+Started GET "/" for 127.0.0.1 at 2024-04-25 18:39:22 +0400
+Processing by BlogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:2
+  Rendered blogs/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1019)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 2386)
+Completed 200 OK in 33ms (Views: 20.4ms | ActiveRecord: 6.2ms | Allocations: 3988)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-25 18:39:24 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.4ms | Allocations: 1597)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1848)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1933)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms | Allocations: 4799)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<ActionView::Base:0x0000000000fde8>):
+    1: <%= form_with(model: blog, local: true) do |form| %>
+    2:   <% if blog.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+  
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:2
+Started GET "/" for 127.0.0.1 at 2024-04-25 18:39:44 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:2
+  Rendered blogs/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1364)
+  Rendered layout layouts/application.html.erb (Duration: 163.5ms | Allocations: 21602)
+Completed 200 OK in 255ms (Views: 175.5ms | ActiveRecord: 5.5ms | Allocations: 32511)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-25 18:39:48 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 5.6ms | Allocations: 1777)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2069)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2154)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.8ms | Allocations: 11367)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<ActionView::Base:0x0000000000b978>):
+    1: <%= form_with(model: blog, local: true) do |form| %>
+    2:   <% if blog.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+  
+app/views/blogs/_form.html.erb:1
+app/views/blogs/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-25 18:40:07 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 3.6ms | Allocations: 730)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 967)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2138)
+Completed 200 OK in 56ms (Views: 33.6ms | ActiveRecord: 10.2ms | Allocations: 6515)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-25 18:40:22 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.2ms | Allocations: 332)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 395)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 1323)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 1603)
+
+
