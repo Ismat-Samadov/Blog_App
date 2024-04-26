@@ -8,6 +8,9 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1
   def show
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "Article not found."
+    redirect_to articles_path
   end
 
   # GET /articles/new
@@ -29,6 +32,7 @@ class ArticlesController < ApplicationController
       render :new
     end
   end
+  
 
   # PATCH/PUT /articles/1
   def update

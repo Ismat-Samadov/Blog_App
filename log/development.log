@@ -700,3 +700,34 @@ Completed 404 Not Found in 5ms (ActiveRecord: 0.2ms | Allocations: 834)
 ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1234wq):
   
 app/controllers/articles_controller.rb:51:in `set_article'
+Started GET "/" for 127.0.0.1 at 2024-04-26 19:49:11 +0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:3
+  Rendered articles/index.html.erb within layouts/application (Duration: 40.5ms | Allocations: 10124)
+  Rendered layout layouts/application.html.erb (Duration: 124.9ms | Allocations: 30339)
+Completed 200 OK in 185ms (Views: 133.4ms | ActiveRecord: 3.1ms | Allocations: 41233)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2024-04-26 19:49:18 +0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1211)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1586)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2024-04-26 19:49:23 +0400
+Processing by BlogsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (Duration: 1.2ms | Allocations: 757)
+  Rendered blogs/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 1961)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 0.5ms | Allocations: 5271)
+
+
