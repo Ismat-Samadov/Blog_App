@@ -1,4 +1,5 @@
-thx to this guy : https://www.youtube.com/watch?v=MCEzxY9BbiU
+thx to this dude : https://www.youtube.com/watch?v=MCEzxY9BbiU
+detailed article here: https://guides.rubyonrails.org/getting_started.html
 
 <table><thead>
 <tr>
