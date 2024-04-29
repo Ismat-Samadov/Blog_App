@@ -1,6 +1,3 @@
-Sure, here's an updated README.md for your Ruby on Rails blog project:
-
-```markdown
 # Ruby on Rails Blog Project
 
 ## Description
@@ -38,6 +35,3 @@ This is a simple Ruby on Rails blog project.
 
 ## Resources
 - [Ruby on Rails Guide](https://guides.rubyonrails.org/getting_started.html)
-```
-
-Feel free to customize it further based on your specific project requirements and preferences!
